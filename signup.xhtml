@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>SIGN UP</title>
+    </h:head>
+    <h:body>
+        <style>
+            
+    table {
+        list-style-type: none;
+        margin: 20%;
+        padding: 0;
+        overflow: hidden;
+        background-color: white;
+    }
+    td{
+        font-family: Simsun;
+        font-size: 1.5em;
+       color:#000;
+        
+    }
+    input{
+        font-size: 1.5em;
+    }
+    </style>
+    <form action="info.php" method="post">
+      <table style="border: 0px">
+		<tr style="background:#025;">
+			<td style=" color:white; width: 300px;background-color: #000; text-align:center; font-family: Simsun; font-size:2.4em; "  >Details</td>
+                        <td style="background-color: #000;"></td>
+			<td style=" color:white; width: 300px; text-align:center;background-color: #000; font-family: Simsun; font-size:2.4em;">Input</td>
+		</tr>
+			<tr>
+			<td>Name:</td>
+                        <td style="background-color: white;"></td>
+			<td><input type="text" name="Nname" size="10"/></td>
+			</tr>
+			
+			<tr>
+			<td>Code name:</td>
+                        <td style="background-color: white;"></td>
+			<td><input type="text" name="Cname" size="10"/></td>
+			</tr>
+          
+			<tr>
+			<td>Password:</td>
+                        <td style=" background-color: white;"></td>
+			<td><input name="MyPwd" type="password" default="secret" description="Enter a password" size="10" /></td>
+			</tr>
+          
+                        <tr>
+			<td>Confirm Password:</td>
+                        <td style=" background-color: white;"></td>
+			<td><input name="ConfirmMyPwd" type="password" default="secret" description="Enter a password" size="10" /></td>
+			</tr>
+          
+                        <tr>
+                        <td style=" background-color: white;"></td>
+                        <input type="submit" value="Create User" style=" font-family: Simsun; width: 300px;"/>
+                        </tr>
+                </table>
+        </form>
+    </h:body>
+    
+</html>
+

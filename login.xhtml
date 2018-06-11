@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>SIGN UP</title>
+    </h:head>
+    <h:body>
+       <style> 
+    table {
+        list-style-type: none;
+        margin: 20%;
+        padding: 0;
+        overflow: hidden;
+        background-color: white;
+        color:#000;
+    }
+    td{
+        font-family: Simsun;
+        font-size: 1.7em;
+        color:#000;
+        
+    }
+    </style>
+     <h:form>
+         <br/>
+              <h:outputLabel for="txtUsername">Username:</h:outputLabel>
+              <h:inputText id="txtUsername" value=""></h:inputText><br/>
+              <h:outputLabel for="txtPwd" >Password:</h:outputLabel>
+              <h:inputSecret id="txtPwd" value=""/><br/>
+              <h:commandButton id="btnLogin" value="Login"/>
+          </h:form>
+     <form>   
+      <table style="border: 0px">
+		<tr style="background: #000;">
+			<td style="width: 300px; text-align:center; color:white; font-family: Simsun; font-size:2.4em; "  >Parts</td>
+			<td style="width: 300px; text-align:center; color:white; font-family: Simsun; font-size:2.4em; ">Quantity</td>
+		</tr>
+         
+              
+			<tr>
+			<td>Code Name:</td>
+			<td><input type="text" name="Cname" size="10"/></td>
+			</tr>
+                        <tr>
+			<td>Password:</td>
+			<td><input name="mypassword" type="Cpword" default="secret" description="" size="10" /></td>
+			</tr>
+                        
+                        <input type="submit" value="Login" style="font-family: Simsun; align-items:center; width: 300px;"/>
+         
+		</table>
+         </form>
+        <h:commandButton id="btnLogin" value="Login"/>
+        
+    </h:body>
+    
+</html>
